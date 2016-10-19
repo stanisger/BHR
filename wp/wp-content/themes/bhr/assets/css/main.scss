@@ -1,0 +1,22 @@
+// theme
+@import 'assets/css/bootstrap.css';
+@import 'assets/css/font-awesome.min.css';
+@import 'assets/css/hoverex-all.css';
+@import 'assets/css/prettyPhoto.css';
+@import 'assets/css/style.css';
+@import 'assets/css/animate.css';
+
+
+// scss
+@import 'mixins';
+@import 'variables';
+
+ 
+// proyect
+@import 'headerwrap';
+@import 'service';
+@import 'portafolio';
+@import 'interface';
+@import 'twrap';
+@import 'dates';
+@import 'general';

@@ -1,0 +1,71 @@
+#dates{
+	background: none;
+	@media (min-width: 993px) {
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00bfd6+50,e9e9e9+50,e9e9e9+50 */
+background: #00bfd6; /* Old browsers */
+background: -moz-linear-gradient(left,  #00bfd6 50%, #e9e9e9 50%, #e9e9e9 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #00bfd6 50%,#e9e9e9 50%,#e9e9e9 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #00bfd6 50%,#e9e9e9 50%,#e9e9e9 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bfd6', endColorstr='#e9e9e9',GradientType=1 ); /* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#00bfd6',GradientType=0 ); /* IE6-9 */
+
+	}
+	.containerLgTwo{
+		article{
+			padding: 36px 36px 81px;
+			text-align: center;
+		}
+		article:nth-child(1){
+         background: #00bfd6;
+		}
+		article:nth-child(2){
+		   background: #e9e9e9;
+
+		}
+		    article:nth-child(1){
+				@media (min-width: 993px) {
+					background: url(assets/img/mapa.png) center;
+					@include cover;
+				}
+				.estados{
+					max-width: 420px;
+					width: 100%;
+					margin: 0 auto;
+				}
+				ul{
+					padding: 24px 0;
+				}
+			}
+			article:nth-child(2){
+				@media (min-width: 993px) {
+					background: none;
+				}
+			}
+	}
+
+
+}
+
+ul.general {
+	    list-style: none;
+	    padding:0;
+	    margin:0;
+		li { 
+		    padding-left: 1em; 
+		    text-indent: -.7em;
+		    color: white;
+		}
+		li:before {
+		    content: "• ";
+		    color: $blue; /* or whatever color you prefer */
+		}
+	}
+
+
+
+
+
+/*@media (min-width: 768px) {}
+@media (min-width: 993px) {}
+@media (min-width: 1170px) {}*/

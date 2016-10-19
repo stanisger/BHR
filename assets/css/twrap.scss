@@ -1,0 +1,71 @@
+#twrap {
+	background: url(assets/img/t-back.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding: 60px 0;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    	@media (min-width: 992px){
+    			padding: 90px 0;
+    	}
+    	@media (min-width: 1200px){
+    			padding: 90px 0  130px;
+    	 }
+    .row{
+    	>div:nth-child(1){
+    		border: 0;
+    		img{
+    			width: 150px;
+    			margin: 0 auto;
+    			display: block;
+    			@media (min-width: 992px){
+    				width:250px;
+    			}
+    		}
+    		@media (min-width: 992px){
+           border-right: 1px solid white;
+           }
+    	}
+    	>div:nth-child(3){
+    		text-align: center;
+    		 padding-top: 24px;
+    		 	@media (min-width: 992px){
+    		 		text-align:  left;
+    		 		padding-left: 36px;
+    		 	}
+    		 		@media (min-width: 1200px){
+						padding-left: 54px;
+    		 		}
+
+    	}
+    }
+    hr{
+    	opacity: .4;
+    	@media (min-width: 992px){
+    		display: none;
+    	}
+    }
+}
+
+#twrap i {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+#twrap  {
+	color: white;
+	font-size: 15px;   
+	line-height: 30px;
+} 

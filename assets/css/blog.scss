@@ -1,0 +1,166 @@
+/*@media (min-width: 768px) {}
+@media (min-width: 993px) {}
+@media (min-width: 1170px) {}*/
+// Styles generales
+csmall, csmall2{
+	font-size:12px;
+	color: rgba( 0, 0, 0, .5);
+	font-style: italic;
+}
+
+p.imgLG{
+	img{
+	width: 100%;
+	height: auto;
+	}
+
+}
+
+.Btitle{
+	 font-family: 'nova_rgregular';
+	 @include cero;
+	 font-size: 18px;
+	 @media (min-width: 768px) {
+	 	font-size: 24px;
+	 }
+}
+
+.share{
+	width:100%;
+    display: block;
+    height: 55px;
+	i{
+		float: right;
+		font-size: 28px;
+	}
+}
+.dateBlog{
+  color: rgba( 0, 0, 0, .4);
+  font-size: 12px;
+  font-style: italic;
+}
+#blog{
+	padding: 54px 18px;
+     .containerLg {
+			@include flexFlow;
+		}
+	@media (min-width: 768px) {
+		padding: 72px 18px;}
+	@media (min-width: 993px) {
+		padding: 120px 18px;}
+	// @media (min-width: 1200px) {
+	// 		padding: 240px 18px;}
+			
+			h4{
+               line-height: 22px;
+               margin: 18px 0;
+			}
+			.articles{
+				margin-bottom: 54px;
+			}
+}
+.datesBlog{
+	margin:  0;
+	width: 100%;
+	@include flexFlow;
+	@media (min-width: 768px) {
+		margin: 36px 0;
+	}
+		.day{
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			display: inline-block;
+			background: #00bfd6;
+			color: white;
+			padding: 0 18px;
+			@media (min-width: 768px) {
+				padding:10px 0;
+				height: 80px;
+				width: 80px;
+				text-align: center;
+
+			}
+			p{
+				font-size: 18px;
+				@include cero;
+				line-height: 35px;
+				display: inline;
+				@media (min-width: 768px) {
+					font-size: 32px;
+					display: block;
+				}
+			}
+			span{
+				font-size: 18px;
+				line-height: 2px;
+				 font-family: 'novalight';
+				 display: inline;
+				 @include cero;
+				 @media (min-width: 768px) {
+                   display: block;
+                   margin-top: 9px;
+				 }
+			}
+
+		
+	}
+	h3{
+		width: 100%;
+		padding: 9px 0; 
+		padding-left: 0px;
+			 @media (min-width: 768px) {
+	 	         	padding-left: 24px;
+	 	         	width: 85%;
+	     }
+	}
+}
+.boder-left{
+   border-left: 1px solid rgba( 0, 0, 0, .2);
+   padding-left: 18px;
+}
+.widget{
+	img{
+		width: 100px;
+	}
+	h3{
+		font-family: 'nova_rgregular';
+		color: #00bfd6;
+		font-size: 30px;
+
+
+	}
+	>ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+		>li { 
+		    padding-left: 1em; 
+		    text-indent: -.7em;
+		    border-bottom: 1px solid rgba( 0, 0, 0, .2);
+		    a{
+		    	color: #333;
+		    	margin-left: 9px;
+		    	font-size: 14px;
+		    	padding: 12px 0;
+		    	display: inline-block;
+		    }
+		}
+    
+		li:before {
+		    content: "• ";
+		    color: #00bfd6; /* or whatever color you prefer */
+		}
+	}
+
+
+}
+
+.popular-posts{
+	
+		li{
+			   border-bottom: 1px solid rgba( 0, 0, 0, .2);
+			   min-height:120px; 
+		}
+	
+}

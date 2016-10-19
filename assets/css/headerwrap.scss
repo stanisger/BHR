@@ -1,27 +1,338 @@
 
-#headerwrap {
+#HeaderIn{
+	margin-top: 125px;
+	height: 200px;
+	width: 100%;
+
+	@include cover;
+	@media (min-width: 768px) {
+			margin-top: 151px;
+			height: 240px;
+	}
+	@media (min-width: 1200px) {
+			margin-top: 186px;
+			height: 300px;
+	}
+}
+
+.headerIn{
+	background: url('assets/img/header-int.jpg') center;
+}
+
+
+
+ol.carousel-indicators{ 
+	li{
+		 height: 15px;
+         width: 15px;
+	}
+    .active{
+     	background-color:  #00bfd6 !important;
+     	border-color:  #00bfd6 !important;
+        height: 15px;
+         width: 15px;
+     }
+}
+.carousel{
+	margin-top: 117px;
+	@media (min-width: 768px) {
+			margin-top: 151px;
+	}
+	@media (min-width: 1200px) {
+			margin-top: 171px;
+	}
+	.carousel-inner{
+	 .item{
+	   	background:  url(assets/img/bhr-home.jpg) center;
+	   	width:100%;
+		height:480px;
+			@media (min-width: 768px) {
+				height:620px;
+			}
+			@media (min-width: 993px) {
+				height:768px;
+			}
+			@media (min-width: 1200px) {
+				height:83vh;
+			}
+	   	@include cover;
+	   	.carousel-caption{
+	   		bottom: 80px;
+	   		@media (min-width: 1200px) {
+	   			bottom: 90px;
+	   		}
+	   		i{
+	   			display: block;
+	   			color: rgba( 255, 255, 255, .9);
+	   			font-size: 32px;
+	   			margin-top: 24px;
+
+	   			-webkit-animation-duration: 2s;
+		        -webkit-animation-delay: .7s;
+		        -webkit-animation-iteration-count: 1;
+
+		        -moz-animation-duration: 2s;
+		        -moz-animation-delay: .7s;
+		        -moz-animation-iteration-count: 1;
+		        
+		        -o-animation-duration: 2s;
+		        -o-animation-delay: .7s;
+		        -o-animation-iteration-count: 1;
+
+		        -ms-animation-duration: 2s;
+		        -ms-animation-delay: .7s;
+		        -ms-animation-iteration-count: 1;
+
+		        @media (min-width: 993px) {
+                   font-size: 42px;
+                   margin-top: 54px;
+		        }
+	   		}
+			h1{
+
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-delay: .2s;
+		    -webkit-animation-iteration-count: 1;
+
+		     -moz-animation-duration: 2s;
+		        -moz-animation-delay: .7s;
+		        -moz-animation-iteration-count: 1;
+		        
+		        -o-animation-duration: 2s;
+		        -o-animation-delay: .7s;
+		        -o-animation-iteration-count: 1;
+
+		        -ms-animation-duration: 2s;
+		        -ms-animation-delay: .7s;
+		        -ms-animation-iteration-count: 1;
+
+			}
+			h3{
+
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-delay: .3s;
+		    -webkit-animation-iteration-count: 1;
+
+		     -moz-animation-duration: 2s;
+		        -moz-animation-delay: .3s;
+		        -moz-animation-iteration-count: 1;
+		        
+		        -o-animation-duration: 2s;
+		        -o-animation-delay: .3s;
+		        -o-animation-iteration-count: 1;
+
+		        -ms-animation-duration: 2s;
+		        -ms-animation-delay: .3s;
+		        -ms-animation-iteration-count: 1;
+
+			}
+
+			hr{
+
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-delay: .5s;
+		    -webkit-animation-iteration-count: 1;
+
+		     -moz-animation-duration: 2s;
+		        -moz-animation-delay: .5s;
+		        -moz-animation-iteration-count: 1;
+		        
+		        -o-animation-duration: 2s;
+		        -o-animation-delay: .5s;
+		        -o-animation-iteration-count: 1;
+
+		        -ms-animation-duration: 2s;
+		        -ms-animation-delay: .5s;
+		        -ms-animation-iteration-count: 1;
+
+			}
+			h5{
+
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-delay: .5s;
+		    -webkit-animation-iteration-count: 1;
+
+		     -moz-animation-duration: 2s;
+		        -moz-animation-delay: .5s;
+		        -moz-animation-iteration-count: 1;
+		        
+		        -o-animation-duration: 2s;
+		        -o-animation-delay: .5s;
+		        -o-animation-iteration-count: 1;
+
+		        -ms-animation-duration: 2s;
+		        -ms-animation-delay: .5s;
+		        -ms-animation-iteration-count: 1;
+
+			}
+			button{
+				 -webkit-animation-duration: 2s;
+			    -webkit-animation-delay: .5s;
+			    -webkit-animation-iteration-count: 1;
+
+			     -moz-animation-duration: 2s;
+		        -moz-animation-delay: .5s;
+		        -moz-animation-iteration-count: 1;
+		        
+		        -o-animation-duration: 2s;
+		        -o-animation-delay: .5s;
+		        -o-animation-iteration-count: 1;
+
+		        -ms-animation-duration: 2s;
+		        -ms-animation-delay: .5s;
+		        -ms-animation-iteration-count: 1;
+			}
+
+			h3 {
+				color: $blue;
+				font-family: 'novalight';
+				font-size: 16px;
+				@include cero;
+				margin-bottom: 20px;
+				strong{
+					font-family: 'novasemibold';
+				}
+				@media (min-width: 768px) {
+					margin-bottom: 28px;
+					font-size: 22px;
+				}
+					@media (min-width: 992px) {
+						font-size: 28px;
+						margin-bottom: 36px;
+					}
+						@media (min-width: 1200px) {
+							font-size: 40px;
+							margin-bottom: 48px;
+						}
+			}
+			h5 {
+				color: $blue;
+				font-family: 'novalight';
+				font-size: 12px;
+				line-height: 18px;
+				@include cero;
+				margin-top: 8px;
+				text-transform: uppercase;
+				@media (min-width: 768px) {
+					margin-top: 8px;
+					font-size: 14px;
+				}
+					@media (min-width: 992px) {
+				
+						margin-top: 16px;
+						font-size: 15px;
+					}
+						@media (min-width: 1200px) {
+					
+							margin-top: 28px;
+							font-size: 19px;
+						}
+			}
+			hr{
+				width: 80%;
+				margin: 0 auto;
+				border-top: 1px solid $blue;
+				@media (min-width: 768px) {
+
+					width: 70%
+				}
+				@media (min-width: 992px) {
+					width: 64%
+				}
+				@media (min-width: 1200px) {
+					width: 75%
+				}
+				
+			}
+			h1 {
+				color: $blue;
+				font-size: 28px;
+				@include cero;
+				font-family: 'nova_rgregular';
+				text-transform: uppercase;
+				
+				strong{
+					color: $aqua;
+					  font-family: 'nova_rgbold';
+				}
+				@media (min-width: 768px){
+					font-size: 38px;
+				}
+				 @media (min-width: 992px){
+				 	font-size: 42px;
+				 	
+				 }
+				   @media (min-width: 1200px){
+				   	font-size: 60.6px;
+
+				   }
+				    @media (min-width: 1440px){
+				   	font-size: 78.6px;
+
+				   }
+
+			}
+			button{
+				margin-top: 30px;
+				@media (min-width: 768px) { 
+					margin-top: 40px;
+
+				}
+					@media (min-width: 992px) {
+						margin-top: 50px;
+
+					}
+					@media (min-width: 1200px) {
+						margin-top: 60px;
+
+					}
+			       }
+			   	}
+			  } 
+		   }
+}
+
+.slide2{
 	min-height: 400px;
 	padding-top: 100px;
 	padding-bottom: 0px;
 	text-align: center;
 	margin-top: 117px;
-	background: url(assets/img/bhr-home.jpg) center;
-	@include cover;
-	@media (min-width: 768px) {
-		min-height: 460px;
-		margin-top: 141px;
-		padding-top: 127px;
+	background-position: center 17%;
+	h1{
+
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-iteration-count: 1;
+
 	}
-		@media (min-width: 993px){
-			min-height: 520px;
-			margin-top: 161px;
-			padding-top: 137px;
-		}
-		@media (min-width: 1200px){
-			min-height: 720px;
-			margin-top: 191px;
-			padding-top: 177px;
-		}
+	h3{
+
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: .3s;
+    -webkit-animation-iteration-count: 1;
+
+	}
+	hr{
+
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-iteration-count: 1;
+
+	}
+	h5{
+
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-iteration-count: 1;
+
+	}
+	button{
+		 -webkit-animation-duration: 2s;
+	    -webkit-animation-delay: .5s;
+	    -webkit-animation-iteration-count: 1;
+	}
+
 	h3 {
 		color: $blue;
 		font-family: 'novalight';
@@ -79,13 +390,13 @@
 			width: 64%
 		}
 		@media (min-width: 1200px) {
-			width: 99%
+			width: 75%
 		}
 		
 	}
 	h1 {
 		color: $blue;
-		font-size: 24px;
+		font-size: 32px;
 		@include cero;
 		font-family: 'nova_rgregular';
 		text-transform: uppercase;
@@ -96,20 +407,24 @@
 		}
 		@media (min-width: 768px){
 			font-size: 38px;
-			;
 		}
 		 @media (min-width: 992px){
 		 	font-size: 42px;
 		 	
 		 }
 		   @media (min-width: 1200px){
+		   	font-size: 60.6px;
+
+		   }
+		    @media (min-width: 1440px){
 		   	font-size: 78.6px;
 
 		   }
+
 	}
 	button{
 		margin-top: 30px;
-		@media (min-width: 768px) {
+		@media (min-width: 768px) { 
 			margin-top: 40px;
 
 		}
@@ -122,6 +437,7 @@
 
 			}
 	}
+	
 }
 
 

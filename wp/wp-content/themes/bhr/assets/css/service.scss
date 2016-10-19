@@ -1,0 +1,83 @@
+
+/* clients logo */
+#cwrap {
+  margin-top: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.webeTwo{
+  height: 350px;
+  border-radius: 5px;
+  margin-bottom: 28px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 36px;
+  margin-top: 24px;
+  padding: 54px 0 ;
+   @media (min-width: 768px) {
+    max-width: none;
+      height: 450px;
+        margin-bottom: 72px;
+        margin-top: 54px;
+   }
+   img{
+   	width: 200px;
+   	margin: 0 auto;
+   }
+   h2{
+        font-family: 'novasemibold';
+        font-size: 19px;
+        text-transform: uppercase;
+          margin-bottom: 9px !important;
+         @media (min-width: 1200px) {
+          font-size: 21px;
+         }
+      }
+    h5{
+    	 font-size: 14px;
+    	 text-transform: uppercase;
+    	   @media (min-width: 993px) {
+	           font-size: 17px;
+	           margin-bottom: 54px;
+	        }
+    }  
+      .text{
+        padding: 0 18px;
+        font-size: 14px;
+        font-family: 'novalight';
+          @media (min-width: 768px) {
+            padding: 0 24px;
+            font-size: 16px;
+          }
+            @media (min-width: 993px) {
+              padding: 0 36px;
+            }
+             
+        }
+       .he-view{
+        div{
+          a{
+             bottom: 45px;
+          }
+        }
+      }  
+      
+
+}
+
+
+
+.blu01{
+	background:  #003366;
+}
+.blu02{
+	background:  #195087;
+}
+.blu03{
+	background:  #4781bc;
+}
+.blu04{
+	background:  #82b8ef;
+}

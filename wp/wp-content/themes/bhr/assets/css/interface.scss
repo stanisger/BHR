@@ -1,0 +1,360 @@
+
+
+
+.navbar { margin-bottom: 0px;
+        // Primer Menú
+		.nav-navbar-header{
+			background: $blue;
+			min-height: 70px;
+			img{
+				margin: 9px 0 ; 
+				min-width: 140px;
+				max-width: 170px;
+			}	
+				@media (min-width: 768px) {
+
+					img{
+					max-width: 220px;
+					min-width: 190px;
+					margin: 15px 0 ; 
+					}
+
+				}
+			@media (min-width: 993px) {
+			min-height: 110px;
+			}
+			@media (min-width: 1200px) {
+			min-height: 140px;
+			img{
+			max-width: 249px;
+			}
+		} 
+
+       .row{
+       	@include cero;
+       }
+		.slogan{
+			position: absolute;
+			right: 18px;
+			top: 18px;
+			width: 310px;
+			color: white;
+
+			ul{
+				width: 100%;
+				
+				@include cero;
+				li.line{
+					display: none;
+					@media (min-width: 768px) {
+									display: inherit;
+								}
+				}
+				li{
+					padding: 0 4px;
+				float: right;
+					display: inline-block;
+					a{
+						color: white;
+						  font-family: 'novalight';
+						  font-size: 14px;
+						  span{
+						  	display: none;
+						  	@media (min-width: 768px) {
+									display: inherit;
+								}
+						  }
+						  i{
+						  	font-size: 19px;
+						    color: rgba( 255, 255, 255, .5);
+						  	margin: 0 2px;
+						  	@media (min-width: 768px) {
+						  		display: none;
+						  	}
+						  }
+
+					}
+				}
+				
+				
+			}
+			.text{
+				text-align: right;
+				margin-top: 13px;
+				opacity: .8;
+				float: right;
+				font-size: 14px;
+				font-family: 'Merriweather', serif;
+				display: none;
+				@media (min-width: 768px) {
+					display: inherit;
+				}
+				@media (min-width: 1200px) {
+						margin-top: 30px;
+						font-size: 17px;
+				}
+			}
+		}
+	 }
+	// Primer Menú
+}
+
+//dropdown-menu
+.dropdown-menu {
+	background: white;
+	padding: 5% ;
+
+	hr{
+		display: none;
+		@media (min-width: 1200px) {
+			display: inherit;
+			background: $blue;
+		}
+	}
+
+	>li {
+		width: 100%;
+		padding: 0 9px;
+		@media (min-width: 768px) {
+			padding-right: 42px;
+			width: 33%;
+			}
+		@media (min-width: 1200px) {
+			padding-right: 42px;
+			width: 16%;
+			}
+	 >a{
+		font-family: 'nova_rgbold';
+		text-transform: uppercase;
+		padding: 0;
+		color: $blue !important;
+		padding:0 !important;
+	}	 	
+		ul{
+			li{
+				list-style-type: none;
+				margin-bottom: 18px;
+				@media (min-width: 768px) {
+					margin-bottom: 36px;
+				}
+				@media (min-width: 1200px) {
+					margin-bottom: 9px;
+				}
+
+
+				a{
+					color: white;
+					font-family: 'novalight';
+					font-size: 12px;
+					padding: 9px 0;
+					white-space: inherit;
+					&:hover{
+						color: $blue;
+					}
+					@media (min-width: 768px) {
+						color: $greyFont;
+					}
+					@media (min-width: 993px) {
+						font-size: 14px;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: rgba( 255, 255, 255, 0.4);
+    	
+}
+.navbar-default .navbar-nav > li {
+	border-bottom:1px solid rgba( 255, 255 , 255 , 0.4);
+	@media (min-width: 768px) {
+           border: none;
+    	}
+}
+.navbar-default .navbar-nav > li:last-child{
+	border: none;
+}
+	
+
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	font-family: 'novalight';
+	font-size: 12px;
+	padding: 12px 9px; 
+	@media (min-width: 993px) {
+			font-size: 14px;
+	}
+	@media (min-width: 1200px) {
+         font-size: 17px;
+         padding: 12px 14px; 
+	}
+}
+
+
+
+
+// when open
+.open > .dropdown-menu {
+  @include flexFlow;
+}
+
+// collpase
+.navbar-collapse{
+       max-height: inherit;
+}
+
+
+
+// GENERAL
+.icon-bar{
+	background: white !important;
+}
+.navbar-nav{
+	>li{
+		  padding: 0 2px;
+		@media (min-width: 993px) {
+			padding: 0 10px;
+		}
+	}
+	>li:first-child{
+		padding-left: 0px; 
+	}
+}
+
+.navbar-header .navbar-brand {
+	color: white;
+}
+.caret{
+	transition: transform .8s;
+	margin-left:9px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+	background: transparent !important;
+
+}
+.navbar-default .navbar-nav > li > a:focus{
+	.caret{
+		 -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari */
+         transform: rotate(180deg);
+	}
+}
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #00b3fe;
+	background-color: transparent;
+}
+
+.navbar-default {
+	background-color: $aqua;
+	border-color: transparent;
+	-webkit-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.42);
+	-moz-box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.42);
+	box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.42);
+}
+
+
+
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+.btn-theme {
+  color: #fff;
+  background-color: #384452;
+  border-color: #384452;
+  margin: 4px;
+}
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+  color: #fff;
+  background-color: #00b3fe;
+  border-color: #00b3fe;
+}
+
+.dmbutton:hover,
+.dmbutton:active,
+.dmbutton:focus{
+	color: #ffffff;
+	background-color: #222222;
+	border-color: #ffffff;
+}
+.dmbutton {
+	background:rgba(0, 0, 0, 0);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding-top: 1.025rem;
+	padding-right: 2.25rem;
+	letter-spacing:0.85px;
+	padding-bottom: 1.0875rem;
+	padding-left: 2.25rem;
+	font-size: 1.55rem;
+	cursor: pointer;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	-webkit-transition: background-color 300ms ease-out;
+	-moz-transition: background-color 300ms ease-out;
+	transition: background-color 300ms ease-out;
+	-webkit-appearance: none;
+	font-weight: normal !important;
+}
+
+.mtb {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.mb {
+	margin-bottom: 60px;
+}
+
+.mt {
+	margin-top: 60px;
+}
+
+.hline {
+	border-bottom: 2px solid #384452;
+}
+
+.hline-w {
+	border-bottom: 2px solid #ffffff;
+	margin-bottom: 25px;
+}
+

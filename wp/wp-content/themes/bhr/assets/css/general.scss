@@ -1,0 +1,292 @@
+/*@media (min-width: 768px) {}
+@media (min-width: 993px) {}
+@media (min-width: 1170px) {}*/
+
+html {
+
+  overflow-x: hidden;
+}
+
+main { 
+  margin:0;
+  padding:0;
+   perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+// .slide {
+//   position: relative;
+//   padding: 25vh 10%;
+//   min-height: 100vh;
+//   width: 100vw;
+//   box-sizing: border-box;
+// -webkit-box-shadow: inset 1px -12px 19px -12px rgba(0,0,0,0.4);
+// -moz-box-shadow: inset 1px -12px 19px -12px rgba(0,0,0,0.4);
+// box-shadow: inset 1px -12px 19px -12px rgba(0,0,0,0.4);
+// 	transform-style: inherit;
+// }
+// .slide:before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left:0;
+//   right:0;
+// }
+
+
+.containerMarging{
+	max-width: 420px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 18px !important;
+	@media (min-width: 768px) {
+		width: 750px;
+        max-width: 1380px;
+
+	}
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+	@media (min-width: 1200px) {
+		width: 1170px;
+	}
+	@media (min-width: 1380px) {
+        width: 1380px;
+	}
+}
+
+.containerLgTwo{
+	 width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+		
+        max-width: 1380px;
+
+	}
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+	@media (min-width: 1200px) {
+		width: 1170px;
+	}
+	@media (min-width: 1380px) {
+        width: 1380px;
+	}
+}
+
+
+.containerMedium{
+	 width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+		
+        max-width: 1300px;
+
+	}
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+	@media (min-width: 1200px) {
+		width: 1170px;
+	}
+	@media (min-width: 1300px) {
+        width: 1280px;
+	}
+}
+
+.containerLg{
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+		width: 750px;
+        max-width: 1380px;
+
+	}
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+	@media (min-width: 1200px) {
+		width: 1170px;
+	}
+	@media (min-width: 1380px) {
+        width: 1380px;
+	}
+}
+
+
+.btn-general{
+	height: 48px;
+	border: 0;
+	color: white;
+	border-radius: 5px;
+	width:  180px;
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,.5);
+	-moz-box-shadow: 0px 6px 0px 0px rgba(0,0,0,.5);
+	box-shadow: 0px 6px 0px 0px rgba(0,0,0,.5);
+	padding-top: 12px;
+	 @media (min-width: 993px) {
+	 	height: 48px;
+	 	width: 180px;
+	 	font-size: 16px;
+	 }
+}
+
+// Styles generales
+
+
+// POSITION
+.centerObjet{
+	@include centerObjet;
+}
+
+.absolute{
+	@include absolute;
+}
+
+.relative{
+	@include relative;
+}
+
+
+// COLORES
+
+.background-opacity-light{
+	background: rgba( 0, 0, 0, .2);
+}
+.background-opacity{
+	background: rgba( 0, 0, 0, .2);
+	transition: background .4s;
+	&:hover{
+		background: rgba( 0, 0, 0, .4);
+		color: white;
+	}
+	&:focus{
+		color: white;
+	}
+}
+
+.fogreen{
+	color: #c7e453;
+}
+.foblue{
+	color: #00bfd6;
+}
+
+.blue{
+	color:$blue;
+}
+.blueLight{
+	color:#00bfd6;
+}
+
+.greenBg{
+	background: #cccc00;
+}
+.redBg{
+	background: #993333;
+}
+.blueBg{
+	background: #0c4073;
+}
+.grayBg{
+	background: #3c3d3f;
+}
+.grayBgLigh{
+	background: #c2b8ab;
+}
+.greenStrong{
+	background: #336666;
+}
+
+.grayFont{
+	color: $black !important;
+}
+.white{
+	color: white;
+}
+
+.title{
+	font-size: 28px;
+	   font-family: 'nova_rgregular';
+	   margin-bottom: 18px;
+	@media (min-width: 768px) {
+		font-size: 36px;
+		margin-bottom: 24px;
+		}
+		@media (min-width: 993px) {
+			font-size: 45px;
+			margin-bottom: 36px;
+		    }
+			@media (min-width: 1200px){
+				font-size: 60px;
+				margin-bottom: 54px;
+			    }
+    }
+.extract{
+	font-size: 18px;
+	font-family: 'novalight';
+    strong{
+     font-family: 'novasemibold';
+    }
+	  @media (min-width: 993px) {
+			font-size: 22px;
+		    }
+} 
+
+.extractTwo{
+	font-size: 18px;
+	font-family: 'novalight';
+    strong{
+     color: $blue;
+    }
+	  @media (min-width: 993px) {
+			font-size: 22px;
+		    }
+}   
+
+.text{
+	font-size: 16px;
+	font-family: 'novalight';
+	line-height: 22px;
+} 
+
+
+// BTN *****************
+.btn-blue{
+		background-color:$blue;
+		color:white;
+			font-size: 14px;
+		font-weight: 700;
+		// width: 95%;
+		border-radius:initial;
+		padding: 14px 36px;	
+		border: 0;
+		font-family: 'nova_rgregular';
+		transition: background-color .5s;
+		border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+		&:hover{
+			background-color:$aqua;
+			color: white;
+
+		}
+		
+			@media (min-width: 992px) {
+				padding: 18px 45px;
+					font-size: 16px;
+			}
+				@media (min-width: 1200px) {
+					padding: 20px 54px;
+						font-size: 18px;
+				}
+	}
