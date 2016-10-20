@@ -16,8 +16,12 @@
 
 /* Services Wrap */
 #service {
-  margin-top: 100px;
-  margin-bottom: 80px;
+ margin-bottom: 60px;
+    margin-top: 60px;
+    @media (min-width: 768px) {
+      margin-bottom: 120px;
+    margin-top: 140px;
+    }
 }
 
 #service i {

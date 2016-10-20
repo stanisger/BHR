@@ -188,6 +188,7 @@ h1.in{
 	border: 0;
 	color: white;
 	border-radius: 5px;
+
 	width:  180px;
 	display: block;
 	font-size: 16px;
@@ -195,7 +196,27 @@ h1.in{
 	-webkit-box-shadow: 0px 6px 0px 0px rgba(0,0,0,.5);
 	-moz-box-shadow: 0px 6px 0px 0px rgba(0,0,0,.5);
 	box-shadow: 0px 6px 0px 0px rgba(0,0,0,.5);
-	padding-top: 12px;
+	padding-top: 5px;
+	 @media (min-width: 993px) {
+	 	height: 48px;
+	 	width: 180px;
+	 	font-size: 16px;
+	 }
+}
+.btn-blue3{
+		background: #1392a1;
+	height: 48px;
+	border: 0;
+	color: white;
+	border-radius: 5px;
+	width:  180px;
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 6px 0px 0px #076570;
+	-moz-box-shadow: 0px 6px 0px 0px #076570;
+	box-shadow: 0px 6px 0px 0px #076570;
+	padding-top: 5px;
 	 @media (min-width: 993px) {
 	 	height: 48px;
 	 	width: 180px;
@@ -337,6 +358,9 @@ h1.in{
 	font-size: 28px;
 	   font-family: 'nova_rgregular';
 	   margin-bottom: 18px;
+	    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	@media (min-width: 768px) {
 		font-size: 36px;
 		margin-bottom: 24px;
@@ -351,19 +375,35 @@ h1.in{
 			    }
     }
 .extract{
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'novalight';
+	 text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
     strong{
      font-family: 'novasemibold';
     }
+    a{
+    	color: $aqua;
+    	text-decoration: underline;
+    	font-family: 'novasemibold';
+    	text-transform: uppercase;
+
+    }
 	  @media (min-width: 993px) {
 			font-size: 22px;
+			a{
+                font-size: 24px;
+			   }
 		    }
 } 
 
 .extractTwo{
 	font-size: 18px;
 	font-family: 'novalight';
+	 text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
     strong{
      color: $blue;
     }
@@ -372,11 +412,25 @@ h1.in{
 		    }
 }   
 
+
+.sub{
+	color: $aqua;
+	font-size: 18px ;
+	margin-top: 5px;
+	 font-family: 'nova_rgregular';
+	  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .text{
 	font-size: 16px;
-	font-family: 'novalight';
+	font-family: 'nova_rgregular';
 	line-height: 22px;
 	font-weight: 100;
+	 text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	em{
 		color: rgba( 0, 0, 0, .4);
 		font-size: 14px;
@@ -386,9 +440,12 @@ h1.in{
 
 .textsmall{
 	font-size: 14px;
-	font-family: 'novalight';
+	font-family: 'nova_rgregular';
 	line-height: 22px;
 	font-weight: 100;
+	 text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	em{
 		color: rgba( 0, 0, 0, .4);
 		font-size: 14px;

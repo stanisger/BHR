@@ -1,0 +1,122 @@
+/*@media (min-width: 768px) {}
+@media (min-width: 993px) {}
+@media (min-width: 1170px) {}*/
+#descriptServicios{
+	width: 100%; 
+	@include flexFlow;
+    article:nth-child(1){
+    	width: 100%;
+    	padding: 36px 36px 54px;
+	    background: $blue;
+    	h2{
+    		color: white;
+    	    font-family: 'novalight';
+    	    font-size: 22px;
+    	  
+    	  strong{
+    	  	 font-family: 'novasemibold';
+    	  }	
+
+    	}
+    	.textPost{
+    		margin-top: 54px;
+    		color: white;
+    		border-left: 1px solid  rgba( white, .5);
+    		font-size: 14px;
+    		font-family: 'nova_rgregular';
+    		padding-left: 24px;
+    		line-height: 28px;
+    		 text-rendering: optimizeLegibility;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  ol{
+		  	margin-left: 15px;
+		  	list-style: none;
+		  	li{
+		  		margin-bottom: 18px;
+		  		@media (min-width: 768px){
+		  			margin-bottom: 24px;
+					}
+		  	}
+		  	 li {
+			    counter-increment: count-me;
+			}
+			li::before {
+			    content: counter(count-me) ". ";
+			    display: block;
+			    position: relative;
+			    max-width: 0px;
+			    max-height: 0px;
+			    left: -1em;
+			    top: .05em;
+			    	color: #bbd35c;
+			    font-weight: bold;
+			}
+		  }
+    		a{
+    			color: #bbd35c;
+    			text-decoration: underline;
+    		}
+    		strong{
+    			color: #bbd35c;
+    		}
+    			@media (min-width: 768px){
+    				margin-top: 130px;
+    				font-size: 16px;
+    			}
+    	}
+	    	@media (min-width: 992px){
+	    		width:63% ;
+	    		padding: 80px 7%  120px;
+	    		h2{
+ 					font-size: 30px;
+	    		}
+	    			.textPost{
+	    				border-left: 2px solid  rgba( white, .5);
+	    			}
+
+	    	}
+    }
+    article:nth-child(2){
+    	width: 100%;
+    	@media (min-width: 992px){
+    		width: 37%;
+    		@include cover;
+    	}
+    }
+}
+.border-text{
+	border-left: 2px solid rgba( $aqua, .3);
+}
+.textWhite{
+
+	padding: 0px 36px 54px;
+	em{
+		color: $aqua;
+		font-style: normal;
+	}
+	 ol{
+		  	margin-left: 55px;
+		  	list-style: none;
+		  	li{
+		  		margin-bottom: 5px;
+		  		@media (min-width: 768px){
+		  			
+					}
+		  	}
+		  	 li {
+			  counter-increment: count-me;
+			}
+			li::before {
+			    content: counter(count-me) ". ";
+			    display: block;
+			    position: relative;
+			    max-width: 0px;
+			    max-height: 0px;
+			    left: -1em;
+			    top: .05em;
+			    	color: $aqua;
+			    font-weight: bold;
+			}
+		  }
+}
