@@ -1,0 +1,219 @@
+.text{
+strong{
+	color:black;
+}
+}
+
+.title-digi{
+	@media (max-width:992px){
+		margin: 70px 0 !important;
+	}
+	@media (max-width:768px){
+		margin: 50px 0 0 0 !important;
+	}
+}
+
+
+.tabDigiosoft{
+	@media (max-width:992px){
+	    width: 90%;
+		margin: 0 auto;
+	}
+
+	@media (max-width:768px){
+		.tab-content > .active {
+    	display: flex;
+		}
+	}
+}
+
+.nav-digiosoft{
+	background-color:$lightblue;
+	margin-top:40px;
+	.links-digiosoft{
+		text-align: center;
+		li{
+			display: inline-block;
+			padding:5px 10px;
+			border-right: 1px solid rgba(0, 0, 0, 0.2);
+			margin:20px 0;
+		}
+		li:last-child{
+			border-right: 0px solid rgba(0, 0, 0, 0.2);
+		}
+
+	}
+}
+
+ul.navDigi{
+	border-bottom: 0px solid #ddd;
+	@include flexFlow;
+	@media (max-width:768px){
+		display: none;
+	}
+		li{
+			width: 33%;
+			a{
+		    background-color: $darkblue;
+		    font-size: 20px;
+		    border-radius: 20px 20px 0 0;
+		    border: 0px solid #ddd;
+		    padding-top: 19px;
+		    color:white;
+			width: 100%;
+			height: 67px;
+				@media (max-width:992px){
+					height: 97px;
+				}
+				@media (max-width:768px){
+					font-size: 17px;
+    				line-height: 13px;
+				}
+			}
+			i{
+				margin-right: 8px;
+				color:white;
+			}
+		}
+
+		li:nth-child(1){
+			a{
+			background-color: $darkblue;
+			}
+		}
+		li:nth-child(2){
+			a{
+			background-color: $aqua;
+			}
+		}
+		li:nth-child(3){
+			a{
+			background-color:#01DEF9;
+			}
+		}
+
+		li.active{
+			a{
+				height: 85px;
+		    	margin-top: -18px;
+		    	border: 0px solid #ddd;
+		    	color:$green;
+		    	&:hover, &:focus{
+					height: 85px;
+			    	margin-top: -18px;
+			    	border: 0px solid #ddd;
+			    	color:$green;
+		    	}
+
+		    	@media(max-width:992px){
+		    		height: 114px;
+						&:hover, &:focus{
+						height: 114px;
+			    		}
+		    	}
+			}
+		}
+}
+
+
+
+
+.tabpanelDigiosoft{
+	border:1px solid rgba(0, 0, 0, 0.2);
+	width: 99%;
+    margin-left: 0%;
+    margin-bottom: 100px;
+    @include flexFlow;
+    @media (max-width:768px){
+    	display: flex !important;
+    	border:0px solid rgba(0, 0, 0, 0.2);
+    	margin-bottom: 30px;
+
+    }
+	div{
+		text-align: left;
+		h3{
+		color:$aqua;
+		font-family: 'novasemibold';
+		margin-bottom: 0;
+		}
+
+		h4{
+			font-family: 'novasemibold';
+			color:black;
+			margin:0 0 20px 0;
+		}
+
+		span{
+			color:$aqua;
+			font-family: 'novasemibold';
+		}
+
+		h5{
+			color:$aqua;
+			font-family: 'novasemibold';
+			margin:20px 0;
+		}
+
+		li{
+			list-style-type: none;
+			margin-bottom: 10px;
+		}
+
+		li:before {
+		    content: "■ ";
+		    color: $green;
+		    margin-right: 10px;
+		    font-size: 12px;
+		    float:left;
+		    margin-bottom:10px;
+		}
+
+	}
+
+	.digiosoftText{
+	margin-top:70px;
+	padding-left: 0px;
+	padding-right: 60px;
+	padding-top:40px;
+	@include order(2);
+
+		@media (max-width:1380px){
+			margin-top:10px;
+			padding-left: 40px;
+
+		}
+		@media (max-width:1200px){
+		    padding-left: 40px;
+			padding-bottom: 32px;
+			background-color: white;
+			margin-top:0px;
+		}
+		@media (max-width:768px){
+			@include order(1);
+		}
+	}
+
+	.digiosoftImage{
+		@include cero;
+		@include order(1);
+			@media (max-width:768px){
+				@include order(2);
+				margin:auto;
+				text-align: center;
+			}
+			img{
+			max-width: 1500px;
+			@media (max-width:992px){
+				width: 564px;
+			}
+			@media (max-width:768px){
+				width: 80%;
+			}
+		}
+	}
+
+
+}
+
+
