@@ -1,0 +1,282 @@
+.inh2{
+	text-transform:uppercase;
+	margin-left:18px;
+}
+
+.border-circle{
+	color:$green;
+	font-size: 20px !important;
+	padding:0 !important;
+	width: 34px;
+	border: 2px solid $green;
+    text-align: center;
+    padding: 5px 10px !important;
+    border-radius: 50px;
+}
+
+strong {
+    font-family: 'novasemibold';
+}
+
+.text-lg{
+	font-size: 16.5px;
+    font-family: 'novalight';
+    line-height: 25px;
+    font-weight: 100;
+
+    span{
+    	color:$aqua;
+    	text-transform: uppercase;
+    	font-family: 'novasemibold';
+    	font-size: 18px;
+    }
+}
+
+#solidaAlianza{
+	background-color:$lightblue;
+	padding:30px;
+	
+	div.containerLg{
+		@include flexFlow;
+		.img-solidAlianza{
+			width: 30%;
+			border-right: 1px solid rgba(0, 0, 0, 0.2);
+			padding-right:30px;
+			@media (max-width:1160px){
+				width: 50%;
+			}
+			@media (max-width:992px){
+				width: 100%;
+				text-align: center;
+				border-right: 0px solid rgba(0, 0, 0, 0.2);
+
+			}
+		}
+		.texto-solidAlianza{
+			width: 70%;
+			padding: 80px 0 50px 50px;
+			@media (max-width:1160px){
+				width: 50%;
+			}
+			@media (max-width:992px){
+				width: 100%;
+			}
+		}
+	}
+}
+
+.asesores{
+	@include flexFlow;
+	.asesores-col{
+		background-color:$darkblue;
+		width: 25%;
+		position:relative;
+		text-align:left;
+		padding: 65px 38px;
+		@media (max-width:992px){
+			width: 50%;
+		}
+		@media (max-width:480px){
+			width: 100%;
+		}
+			li{
+				color:$green;
+				font-size: 24px;
+				margin-bottom: 20px;
+				letter-spacing: 1px;
+				font-family: 'novasemibold';
+				margin-left: 20px;
+    			line-height: 32px;
+    			list-style-type: square;
+			}
+
+			p{
+				color:white;
+				padding:0 20px;
+			}
+
+			.arrow-icon{
+				    background-color: $darkblue;
+				    width: 70px;
+				    height: 70px;
+				    padding-top: 18px;
+				    border-radius: 50px;
+				    position: absolute;
+				    right: 2px;
+				    right: -37px;
+    				z-index: 9;
+    				bottom:140px;
+    				text-align: center;
+    				@media (max-width:992px){
+    					display: none;
+    				}
+			}
+	}
+
+	.asesores-col-img{
+		background-color:$darkblue;
+		width: 25%;
+		position:relative;
+		text-align: center;
+		overflow: hidden;
+		@media (max-width:992px){
+			width: 50%;
+		}
+		@media (max-width:480px){
+			width: 100%;
+		}
+	}
+
+	.asesores-col:nth-child(1){
+		@include order(1);
+		@media (max-width:992px){
+			@include order(1);
+		}
+		@media (max-width:480px){
+			@include order(1);
+		}
+	}
+	.asesores-col-img:nth-child(2){
+		@include order(2);
+		@media (max-width:992px){
+			@include order(2);
+		}
+		@media (max-width:480px){
+			@include order(2);
+		}
+	}
+
+	.asesores-col:nth-child(3){
+		@include order(3);
+		@media (max-width:992px){
+			@include order(4);
+		}
+		@media (max-width:480px){
+			@include order(3);
+		}
+	}
+	.asesores-col-img:nth-child(4){
+		@include order(4);
+		@media (max-width:992px){
+			@include order(3);
+		}
+		@media (max-width:480px){
+			@include order(4);
+		}
+	}
+
+
+
+
+	&:nth-child(2){
+		.arrow-icon{
+			left:-37px !important;
+			right: 0 !important;
+		}
+	}
+
+	img{
+    	overflow: hidden;
+    	width: 378px !important;
+    	min-width: 378px;
+    	@media (max-width:1200px){
+    		min-width: 478px;
+    	}
+	}
+}
+
+
+.asesores:nth-child(4){
+	.asesores-col {
+		.arrow-icon{
+			left:-37px;
+			right:10px;
+		}
+	}
+
+}
+
+
+.as2{
+	.asesores-col-img:nth-child(1){
+		@include order(1);
+		@media (max-width:992px){
+			@include order(2);
+		}
+		@media (max-width:480px){
+			@include order(2);
+		}
+	}
+	.asesores-col:nth-child(2){
+		@include order(2);
+		@media (max-width:992px){
+			@include order(1);
+		}
+		@media (max-width:480px){
+			@include order(1);
+		}
+	}
+
+	.asesores-col-img:nth-child(3){
+		@include order(3);
+		@media (max-width:992px){
+			@include order(3);
+		}
+		@media (max-width:480px){
+			@include order(4);
+		}
+	}
+	.asesores-col:nth-child(4){
+		@include order(4);
+		@media (max-width:992px){
+			@include order(4);
+		}
+		@media (max-width:480px){
+			@include order(3);
+		}
+	}
+}
+
+
+#serviciosdig{
+	margin:100px 0;
+	ul{
+		text-align: left;
+		width: 33%;
+    	margin: auto;
+    	@media (max-width:1300px){
+    		width: 50%;
+    	}
+    	@media (max-width:992px){
+    		width: 70%;
+    	}
+    	@media (max-width:480px){
+    		width: 85%;
+    	}
+		li{
+			    font-size: 20px;
+    			list-style-type: square;
+    			padding:20px 0;
+    			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    			list-style-type: none;
+    			a{
+    				color:$greyFont;
+    				&:hover{
+    					color:$aqua;
+    				}
+    			}
+
+		}
+
+		li:before {
+		    content: "■ ";
+		    color: $aqua;
+		    margin-right: 10px;
+		    font-size: 12px;
+		}
+	}
+}
+
+
+
+
