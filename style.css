@@ -1,9 +1,151 @@
+@charset "UTF-8";
 @import url(assets/css/bootstrap.css);
 @import url(assets/css/font-awesome.min.css);
 @import url(assets/css/hoverex-all.css);
 @import url(assets/css/prettyPhoto.css);
 @import url(assets/css/style.css);
 @import url(assets/css/animate.css);
+.btn-general {
+  height: 48px;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  width: 180px;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 12px; }
+  @media (min-width: 993px) {
+    .btn-general {
+      height: 48px;
+      width: 180px;
+      font-size: 16px; } }
+
+.btn-blue3 {
+  background: #1392a1;
+  height: 48px;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  width: 180px;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 6px 0px 0px #076570;
+  -moz-box-shadow: 0px 6px 0px 0px #076570;
+  box-shadow: 0px 6px 0px 0px #076570;
+  padding-top: 5px; }
+  @media (min-width: 993px) {
+    .btn-blue3 {
+      height: 48px;
+      width: 180px;
+      font-size: 16px; } }
+
+.btn-blue2 {
+  margin-top: 36px;
+  height: 35px;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  display: block;
+  font-size: 12px;
+  background: #00bfd6;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 6px 0px 0px  #178e9c;
+  -moz-box-shadow: 0px 6px 0px 0px #178e9c;
+  box-shadow: 0px 6px 0px 0px #178e9c;
+  padding-top: 9px; }
+  .btn-blue2:hover {
+    color: white;
+    background: #1ca1b1; }
+
+.btn-orange {
+  height: 44px;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 180px;
+  display: block;
+  font-size: 18px;
+  background: #e88214;
+  -webkit-box-shadow: 0px 6px 0px 0px #7d4101;
+  -moz-box-shadow: 0px 6px 0px 0px #7d4101;
+  box-shadow: 0px 6px 0px 0px #7d4101;
+  padding-top: 9px; }
+  .btn-orange:hover {
+    color: white;
+    background: #1ca1b1; }
+
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 12px 40px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased; }
+
+/* Button 2 */
+.btn-2 {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.6);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none; }
+
+/* Button 2a */
+.btn-2a {
+  border-radius: 0 0 5px 5px; }
+
+.btn-2a:hover {
+  box-shadow: 0 4px rgba(0, 0, 0, 0.6);
+  top: 2px; }
+
+.btn-2a:active {
+  box-shadow: 0 0 rgba(0, 0, 0, 0.6);
+  top: 6px; }
+
 #HeaderIn {
   margin-top: 125px;
   height: 200px;
@@ -470,13 +612,15 @@ ol.carousel-indicators .active {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
   margin-top: 50px;
+  margin-bottom: 30px;
+  margin-top: 60px;
   padding: 0; }
   @media (max-width: 992px) {
     .vacante-col {
       border-right: 0px solid rgba(0, 0, 0, 0.2); } }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .vacante-col {
-      margin-bottom: 30px;
+      margin-bottom: 90px;
       margin-top: 30px; } }
 
 .vacante-col:before {
@@ -1910,82 +2054,14 @@ h1.in {
     .containerSmall {
       width: 992px; } }
 
-.btn-general {
-  height: 48px;
-  border: 0;
-  color: white;
-  border-radius: 5px;
-  width: 180px;
-  display: block;
-  font-size: 16px;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.5);
-  padding-top: 5px; }
-  @media (min-width: 993px) {
-    .btn-general {
-      height: 48px;
-      width: 180px;
-      font-size: 16px; } }
-
-.btn-blue3 {
-  background: #1392a1;
-  height: 48px;
-  border: 0;
-  color: white;
-  border-radius: 5px;
-  width: 180px;
-  display: block;
-  font-size: 16px;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 6px 0px 0px #076570;
-  -moz-box-shadow: 0px 6px 0px 0px #076570;
-  box-shadow: 0px 6px 0px 0px #076570;
-  padding-top: 5px; }
-  @media (min-width: 993px) {
-    .btn-blue3 {
-      height: 48px;
-      width: 180px;
-      font-size: 16px; } }
-
-.btn-blue2 {
-  margin-top: 36px;
-  height: 35px;
-  border: 0;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  width: 150px;
-  display: block;
-  font-size: 12px;
-  background: #00bfd6;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0px 6px 0px 0px  #178e9c;
-  -moz-box-shadow: 0px 6px 0px 0px #178e9c;
-  box-shadow: 0px 6px 0px 0px #178e9c;
-  padding-top: 9px; }
-  .btn-blue2:hover {
-    color: white;
-    background: #1ca1b1; }
-
-.btn-orange {
-  height: 44px;
-  border: 0;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-  width: 180px;
-  display: block;
-  font-size: 18px;
-  background: #e88214;
-  -webkit-box-shadow: 0px 6px 0px 0px #7d4101;
-  -moz-box-shadow: 0px 6px 0px 0px #7d4101;
-  box-shadow: 0px 6px 0px 0px #7d4101;
-  padding-top: 9px; }
-  .btn-orange:hover {
-    color: white;
-    background: #1ca1b1; }
+.he-vie {
+  margin-top: 36px; }
+  @media (min-width: 768px) {
+    .he-vie {
+      margin-top: 18px; } }
+  @media (min-width: 1200px) {
+    .he-vie {
+      margin-top: 36px; } }
 
 .centerObjet {
   position: absolute;
