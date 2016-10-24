@@ -7,7 +7,7 @@
     article:nth-child(1){
     	width: 100%;
     	padding: 36px 36px 54px;
-	    background: $blue;
+	    // background: $blue;
     	h2{
     		color: white;
     	    font-family: 'novalight';
@@ -29,6 +29,14 @@
     		 text-rendering: optimizeLegibility;
 		  -webkit-font-smoothing: antialiased;
 		  -moz-osx-font-smoothing: grayscale;
+		  em{
+		  	color: $aqua;
+		  	font-style: normal;
+		  	font-size: 16px;
+		  	font-family: 'novasemibold';
+		  	 text-transform: uppercase;
+
+		  }
 		  ol{
 		  	margin-left: 15px;
 		  	list-style: none;
