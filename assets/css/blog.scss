@@ -7,6 +7,22 @@ csmall, csmall2{
 	color: rgba( 0, 0, 0, .5);
 	font-style: italic;
 }
+ .paginator {
+ 	width: 300px;
+ 	margin: auto;
+     p{
+         color:  $aqua;
+         display: inline-block;
+         margin: 5px 15px;
+         text-decoration: underline;
+           }
+           p:nth-child(1){
+           	float: left;
+           }
+           p:nth-child(2){
+           	float: right;
+           }
+  }
 
 p.imgLG{
 	img{
@@ -58,6 +74,11 @@ p.imgLG{
 			.articles{
 				margin-bottom: 54px;
 			}
+}
+.tblog{
+	a{
+		display: block;
+	}
 }
 .datesBlog{
 	margin:  0;
@@ -174,3 +195,4 @@ p.imgLG{
 		}
 	
 }
+

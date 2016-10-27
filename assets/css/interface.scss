@@ -1,5 +1,129 @@
 
+* a{
+	color: $aqua ;
+	// text-decoration: underline;
+	font-family: 'nova_rgbold';
+	// &:hover{
 
+	// }
+}
+
+
+
+.publicado{
+	color:#cbcbcb;
+	font-style: italic;
+}
+#search
+{
+	max-width: 992px;
+	width: 100%;
+	padding: 36px 18px; 
+	margin: 0 auto;
+	.linket{
+		font-size: 12px;
+		margin-top: 9px;
+		display: block;
+		strong{
+			 font-family: 'nova_rgbold';
+			 	font-size: 13px;
+		}
+
+	}
+	.sub{
+	    text-transform: uppercase;
+        color: #333;
+        margin:  36px 0 0;
+        font-size: 24px;
+	}
+	small{
+		font-size: 12px;
+		color: #999;
+		font-style: italic;
+		margin-bottom: 12px;
+		display: inline-block;
+	}
+
+}
+.generica{
+	padding: 200px 5%;
+}
+:focus {
+outline: 0 !important;
+}
+::-webkit-input-placeholder {
+color: white;
+font-family: 'novalight';
+}
+
+:-moz-placeholder { /* Firefox 18- */
+color: white;
+font-family: 'novalight';
+ 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+color: white;
+font-family: 'novalight';
+  
+}
+
+:-ms-input-placeholder {  
+color: white;
+font-family: 'novalight';
+
+}
+#searchform{
+	color: white !important;
+	float: inherit;
+	margin-top:12px;
+	@media (min-width: 768px) {
+	float: right;
+
+	}
+
+	input{
+		background: transparent;
+		border: 1px solid rgba( 255, 255, 255, .5);
+		color: white !important;
+		width: 90%;
+		height: 40px;
+		padding: 0 18px;
+		
+		@media (min-width: 768px) {
+			border: none;
+			height: auto;
+			padding: 0 ;
+		border-bottom: 1px solid white;
+				font-size: 12px;
+					width: 100px;
+			
+		}
+		@media (min-width: 993px) {
+			   font-size: 14px;
+			   width: 140px;
+			
+			}
+		@media (min-width: 1600px) {
+	         font-size: 16px;
+	          width: 180px;
+	         
+		}
+	}
+
+	button{
+		border: none;
+		background: rgba( 255, 255, 255, .2);
+		width: 9%;
+		height: 40px;
+		color: white !important;
+		@media (min-width: 768px) {
+			width: 20px;
+	     	height: 20px;
+	     	background: transparent;
+		}
+	}
+}
 
 .navbar { margin-bottom: 0px;
         // Primer Menú
@@ -112,7 +236,7 @@
 				opacity: .8;
 				float: right;
 				font-size: 14px;
-				font-family: 'Merriweather', serif;
+				 font-family: 'nova_rgregular';
 				display: none;
 				@media (min-width: 768px) {
 					display: inherit;
@@ -121,6 +245,12 @@
 						margin-top: 30px;
 						font-size: 17px;
 				}
+				a{
+					font-family: 'nova_rgbold !important';
+				}
+			}
+			.bold{
+				font-family: 'nova_rgbold';
 			}
 		}
 	 }
@@ -142,28 +272,37 @@
 
 	>li {
 		width: 100%;
-		padding: 0 9px;
+		padding: 5px 9px;
 		@media (min-width: 768px) {
-			padding-right: 42px;
+			padding-right: 30px;
 			width: 33%;
+		   margin-bottom: 28px;
 			}
-		@media (min-width: 1200px) {
-			padding-right: 42px;
+		@media (min-width: 1320px) {
+			padding-right: 30px;
 			width: 16%;
+			 margin-bottom: 0px;
 			}
 	 >a{
 		font-family: 'nova_rgbold';
 		text-transform: uppercase;
 		padding: 0;
-		color: $blue !important;
+		margin-bottom: 0px;
+		padding-bottom: 18px;
+		color: $blue ;
 		padding:0 !important;
+		border-bottom: 1px solid rgba( $blue, 1);
+		@media (min-width: 768px) {
+			margin-bottom: 18px;
+		}
 	}	 	
 		ul{
+			margin-bottom: 18px;
 			li{
 				list-style-type: none;
-				margin-bottom: 18px;
+				margin-bottom: 0px;
 				@media (min-width: 768px) {
-					margin-bottom: 36px;
+					margin-bottom: 0px;
 				}
 				@media (min-width: 1200px) {
 					margin-bottom: 9px;
@@ -176,17 +315,23 @@
 					font-size: 12px;
 					padding: 9px 0;
 					white-space: inherit;
+					height: 30px;
 					&:hover{
 						color: $blue;
 					}
 					@media (min-width: 768px) {
 						color: $greyFont;
+						height: auto;
 					}
 					@media (min-width: 993px) {
-						font-size: 14px;
+						font-size: 13px;
+						line-height: 12px;
 
 					}
 				}
+			}
+			@media (min-width: 768px) {
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -205,20 +350,27 @@
 .navbar-default .navbar-nav > li:last-child{
 	border: none;
 }
-	
+	.salmon{
+		background: salmon;
+	}
 
 
 .navbar-default .navbar-nav > li > a {
 	color: white;
 	font-family: 'novalight';
-	font-size: 12px;
-	padding: 12px 9px; 
-	@media (min-width: 993px) {
-			font-size: 14px;
+	font-size: 16px;
+	padding: 12px 12px; 
+	@media (min-width: 768px) {
+			font-size: 12px;
+			padding: 12px 9px;
 	}
-	@media (min-width: 1200px) {
+	@media (min-width: 993px) {
+		   font-size: 14px;
+			padding: 12px 9px;
+		}
+	@media (min-width: 1600px) {
          font-size: 17px;
-         padding: 12px 14px; 
+         padding: 12px 9px; 
 	}
 }
 
@@ -232,7 +384,15 @@
 
 // collpase
 .navbar-collapse{
-       max-height: inherit;
+    max-height: inherit;
+    width: 100%;
+    padding: 0 18px !important;
+     margin: 0 ;
+    @media (min-width: 1380px) {
+   	 margin: 0 auto;
+   	 padding: 0  !important;
+       width: 1380px;
+    }
 }
 
 
@@ -299,7 +459,7 @@
 .yamm .nav,
 .yamm .collapse,
 .yamm .dropup,
-.yamm .dropdown {
+.yamm .dropdown { 
   position: static;
 }
 .yamm .container {
@@ -412,6 +572,7 @@
 	     padding-left: 0px;
 	 }
 	.footerContent{
+		@include flexFlow;
         >div{
         	margin-top: 54px;
         }
@@ -601,3 +762,23 @@
 	font-size: 18px;
 }
 
+.classic{
+	.dropdown-menu{
+		padding: 18px;
+		width: 250px;
+		li{
+			width: 100%;
+			margin-bottom: 0px;
+			a{
+			    font-family: 'nova_rgregular';	
+			    color: white;
+			    text-transform: capitalize;
+			    border-bottom: none;
+			    margin-bottom: 0;
+			     @media (min-width: 768px) {
+			     	   color: #7c7f85;
+			     }
+			}
+		}
+	}
+}

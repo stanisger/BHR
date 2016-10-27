@@ -94,17 +94,21 @@
 	
 	 }
 }
+.marginBtns{
+	margin-top: 32px;
+}
 
 .btn {
 	border: none;
 	font-family: inherit;
-	font-size: inherit;
+	font-size: 16px;
+    font-family: 'nova_rgregular';
 	color: inherit;
 	background: none;
 	cursor: pointer;
 	padding: 12px 40px;
 	display: inline-block;
-	margin: 15px 30px;
+	// margin: 15px 30px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;

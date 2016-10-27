@@ -182,18 +182,20 @@ h1.in{
 	// } 
 }
 .he-vie{
-	margin-top: 36px;
+	margin-top: 9px;
 	  @media (min-width: 768px) {
-	  	margin-top: 18px;
+	  	margin-top: 9px; 
 	  }
 	  	  @media (min-width: 1200px) {
-				margin-top: 36px;
+				margin-top: 18px;
 	  	  }
 }
 
 
 
-
+.art{
+	margin-bottom: 60px;
+}
 
 // POSITION
 .centerObjet{
@@ -235,6 +237,9 @@ h1.in{
 
 .blue{
 	color:$blue;
+}
+.blueBg{
+	background:$blue;
 }
 .blueLight{
 	color:#00bfd6;
@@ -282,7 +287,7 @@ h1.in{
 			margin-bottom: 36px;
 		    }
 			@media (min-width: 1200px){
-				font-size: 60px;
+				font-size: 50px;
 				margin-bottom: 54px;
 			    }
     }
@@ -325,6 +330,16 @@ h1.in{
 }   
 
 
+.subLg{
+	color: $aqua;
+	font-size: 36px ;
+	margin-top: 48px;
+	 font-family: 'nova_rgregular';
+	  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .sub{
 	color: $aqua;
 	font-size: 18px ;
@@ -334,6 +349,7 @@ h1.in{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 .text{
 	font-size: 16px;
