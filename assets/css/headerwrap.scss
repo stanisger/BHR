@@ -54,14 +54,16 @@ ol.carousel-indicators{
 			}
 			@media (min-width: 1200px) {
 				height:83vh;
+				min-height: 700px;
 			}
 	   	@include cover;
 	   	.carousel-caption{
+	   		text-shadow: none;
 	   		bottom: 80px;
 	   		@media (min-width: 1200px) {
 	   			bottom: 90px;
 	   		}
-	   		i{
+	   		i.arr{
 	   			display: block;
 	   			color: rgba( 255, 255, 255, .9);
 	   			font-size: 32px;
@@ -84,7 +86,7 @@ ol.carousel-indicators{
 		        -ms-animation-iteration-count: 1;
 
 		        @media (min-width: 993px) {
-                   font-size: 42px;
+                   font-size: 52px;
                    margin-top: 54px;
 		        }
 	   		}

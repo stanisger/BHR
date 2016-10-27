@@ -33,7 +33,7 @@
     <!-- Fixed navbar -->
  <div class="navbar navbar-default navbar-fixed-top yamm" role="navigation">
 	<div class="nav-navbar-header">
-		<div class="containerMedium relative">
+		<div class="containerLg relative">
 				<div class="row">
 					<img class="col-xs-4 col-sm-3 col-md-2 col-lg-3" src="assets/img/logo-bhr.png" alt="">
 				    <div class="slogan ">
@@ -60,7 +60,7 @@
             <span class="icon-bar "></span> 
           </button>
         </div>
-        <div class="navbar-collapse collapse navbar-left col-md-12 col-lg-10 col-lg-offset-2">
+        <div class="navbar-collapse collapse ">
           <ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
 					<!-- using global settings -->
 					<li class="dropdown yamm-fw">
@@ -184,6 +184,10 @@
 			 
 			
           </ul>
+         <form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+          <input type="text" placeholder="buscar…" />
+          <button type="submit" class="icon-only"  id="searchsubmit"> <i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -226,12 +230,14 @@
 
       <div class="carousel-caption">
       	<h1 class="animated  fadeInUp">Dentro del <strong>Top 10</strong></h1>
+
 					<h3 class="animated  fadeInUp">de las Firmas <strong>más importantes de México</strong></h3>
 					<hr class="animated  fadeInUp">
 					<h5 class="animated  fadeInUp">Contadores Públicos Certificados, Abogados y Consultores de Negocios</h5>
 
 	                <button class="btn-blue animated  fadeInUp" id="ref">CONOCE MÁS</button>
-					<i class="fa fa-arrow-circle-down animated  fadeInUp" aria-hidden="true"></i>
+					<i class="fa fa-arrow-circle-down animated arr fadeInUp" aria-hidden="true"></i>
+
       </div>
     </div>
     <div class="item">
@@ -244,11 +250,13 @@
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-left flaticon-back" aria-hidden="true">
+    	
+    </span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right flaticon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
@@ -281,6 +289,7 @@
 				
 				<div class="col-sm-6 col-md-4">
 					<div class="he-wrap tpl6 webe greenBg">
+ 
                         <h3 class="a1 grayFont" data-animate="fadeInDown">Assurance y Auditoría</h3>
                         <div class="text ">
                         	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -518,7 +527,7 @@
     		 			<li>CDMX</li>
     		 		</ul>
     		 	</div>
-    		 	    <a href="#" class=" btn btn-2 btn-2a background-opacity  a1" data-animate="fadeInUp">VER SEDES</a>
+    		 	    <a href="#" class=" btn btn-2 btn-2a background-opacity salmon a1" data-animate="fadeInUp">VER SEDES</a>
     		 </article>
     		<article class="col-md-6 col-sm-12">
     		 	<h3 class="title ">Catálogo Digital</h3>

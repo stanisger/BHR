@@ -3055,9 +3055,9 @@ input[type="button"].btn-block {
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: #fff;
+  /*color: #fff;*/
   text-decoration: none;
-  background-color: #428bca;
+/*  background-color: #428bca;*/
   outline: 0;
 }
 .dropdown-menu > .disabled > a,
@@ -3656,6 +3656,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-height: 340px;
   padding-right: 15px;
   padding-left: 15px;
+  height: 100vh !important;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
@@ -3666,7 +3667,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-collapse {
-    width: auto;
+  
     border-top: 0;
     box-shadow: none;
   }
@@ -3949,7 +3950,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-text {
   color: #777;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a { 
   color: #777;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -3981,7 +3982,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -3991,7 +3992,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+ /*   color: #777;*/
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4002,7 +4003,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -5570,12 +5571,12 @@ button.close {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
-  .carousel-control .icon-next {
+  .carousel-control .icon-next, .flaticon-back {
     width: 30px;
     height: 30px;
     margin-top: -15px;
     margin-left: -15px;
-    font-size: 30px;
+    font-size: 50px;
   }
   .carousel-caption {
     right: 20%;

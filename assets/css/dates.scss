@@ -61,7 +61,19 @@
 				ul{
 					padding: 24px 0;
 					@media (min-width: 993px) {
-						padding: 43px 0;
+						padding: 43px 0;	
+					}
+						li{
+					    // float:left;
+					      margin-left: 5px;
+					    position:relative;
+					}
+
+					li:before{
+					    content:"■ ";
+					    margin-right: 2px; 
+			
+
 					}
 				}
 			}
@@ -72,7 +84,6 @@
 				}
 			}
 	}
-
 
 }
 
